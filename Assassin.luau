@@ -10,7 +10,11 @@ mainTab:Button("Revamp AutoKill", function()
 end)
 
 mainTab:Toggle("Loop Revamp AutoKill", function(state)
-
+    looping = state
+    while looping do
+        task.wait()
+        print("Looping")
+    end
 end)
 
 
